@@ -1,0 +1,21 @@
+info:
+  name: Create Room
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{host}}/rooms"
+  auth: inherit
+  body:
+    mode: json
+    json: |
+      {
+        "username": "nraboy"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

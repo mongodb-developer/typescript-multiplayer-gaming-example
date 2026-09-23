@@ -1,0 +1,14 @@
+{
+  "name": "typescript-multiplayer-gaming-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dev convenience scripts for running the backend and frontend together",
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,magenta \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

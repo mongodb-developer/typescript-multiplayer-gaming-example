@@ -1,0 +1,9 @@
+info:
+  name: Local
+  type: environment
+
+variables:
+  - name: host
+    value: http://localhost:3000
+    enabled: true
+    secret: false

@@ -1,0 +1,12 @@
+node_modules
+
+.env
+
+dist
+
+.DS_Store*
+.claude/plans
+
+written_samples
+blog_prompt.md
+blog.md

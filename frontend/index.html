@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Coin Race</title>
+    </head>
+    <body>
+        <div id="app">
+            <section id="lobby" class="screen">
+                <h1>Coin Race</h1>
+
+                <div id="lobby-register">
+                    <label for="username">Username</label>
+                    <input id="username" type="text" maxlength="20" placeholder="Enter a username" />
+                    <button id="register-btn" type="button">Register</button>
+                    <p id="lobby-error" class="error hidden"></p>
+                </div>
+
+                <div id="lobby-actions" class="hidden">
+                    <p id="welcome-message"></p>
+
+                    <div class="action-row">
+                        <button id="create-match-btn" type="button">Create Match</button>
+                    </div>
+
+                    <div class="action-row">
+                        <input id="room-id-input" type="text" placeholder="Room ID" />
+                        <button id="join-match-btn" type="button">Join Match</button>
+                    </div>
+                </div>
+
+                <div id="lobby-waiting" class="hidden">
+                    <p>Waiting for opponent...</p>
+                    <p>Share this Room ID: <strong id="waiting-room-id"></strong></p>
+                </div>
+
+                <div id="leaderboard">
+                    <h2>Leaderboard</h2>
+                    <ol id="leaderboard-list"></ol>
+                </div>
+            </section>
+
+            <section id="game-screen" class="screen hidden">
+                <div id="hud">
+                    <span id="hud-player1"></span>
+                    <span id="hud-timer"></span>
+                    <span id="hud-player2"></span>
+                </div>
+                <div id="game-container"></div>
+            </section>
+
+            <section id="results" class="screen hidden">
+                <h1>Match Over</h1>
+                <p id="results-winner"></p>
+                <p id="results-scores"></p>
+                <button id="play-again-btn" type="button">Play Again</button>
+            </section>
+        </div>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>

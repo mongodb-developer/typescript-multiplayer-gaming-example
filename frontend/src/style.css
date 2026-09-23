@@ -1,0 +1,127 @@
+:root {
+    color-scheme: dark;
+    font: 16px/1.4 system-ui, sans-serif;
+    color: #e8e8ec;
+    background: #14151c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen {
+    width: 100%;
+    max-width: 480px;
+    padding: 32px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    margin: 0 0 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #a8a8b3;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #3a3b46;
+    background: #1e1f29;
+    color: #e8e8ec;
+    font-size: 15px;
+}
+
+button {
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: none;
+    background: #4c6ef5;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3b5bdb;
+}
+
+.action-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.action-row input {
+    margin-bottom: 0;
+}
+
+.error {
+    color: #ff6b6b;
+}
+
+#leaderboard {
+    margin-top: 32px;
+    text-align: left;
+}
+
+#leaderboard-list {
+    padding-left: 24px;
+}
+
+#lobby-waiting strong {
+    color: #4c6ef5;
+}
+
+/* --- Game screen --- */
+
+#game-screen {
+    max-width: none;
+    padding: 16px;
+}
+
+#hud {
+    width: 1920px;
+    max-width: 100%;
+    margin: 0 auto 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#game-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* --- Results screen --- */
+
+#results-scores {
+    font-size: 18px;
+    margin-bottom: 24px;
+}

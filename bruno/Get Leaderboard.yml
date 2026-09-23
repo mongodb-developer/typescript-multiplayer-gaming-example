@@ -1,0 +1,15 @@
+info:
+  name: Get Leaderboard
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{host}}/players/leaderboard"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

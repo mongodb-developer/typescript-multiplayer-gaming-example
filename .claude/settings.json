@@ -1,0 +1,9 @@
+{
+    "model": "opusplan",
+    "effortLevel": "medium",
+    "attribution": {
+        "commit": "",
+        "pr": ""
+    },
+    "plansDirectory": "./.claude/plans"
+}
