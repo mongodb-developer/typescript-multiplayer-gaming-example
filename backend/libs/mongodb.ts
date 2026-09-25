@@ -18,7 +18,7 @@ export async function connectToMongoDB(): Promise<void> {
         throw new Error("MONGO_URI and MONGO_DB_NAME must be set in environment");
     }
 
-    client = new MongoClient(uri);
+    client = new MongoClient(uri, { appName: "devrel-github-typescript-multiplayergame" });
 
     await client.connect();
     db = client.db(dbName);
